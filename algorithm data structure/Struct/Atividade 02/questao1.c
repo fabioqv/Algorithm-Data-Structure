@@ -17,7 +17,7 @@ e) Escreva uma função main para testar as funções anteriores.
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct {
+typedef struct ingresso{
     float preco;
     char local[50];
     char atracao[50];
@@ -71,7 +71,7 @@ void imprime_menor_maior_preco(int n, Ingresso *vet) {
             indice_maior = i;
         }
     }
-    printf("==============================================================\n");
+    system("cls");
     printf("\tEvento de ingresso mais barato:\t\n");
     imprime(&vet[indice_menor]);
 
